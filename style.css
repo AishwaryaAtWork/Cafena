@@ -75,13 +75,13 @@ header{
     border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.5rem;
 }
-i{
+.icons div{
     color: #fff;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
-i:hover{
+.icons div:hover{
     color: var(--main-color);
 }
 #menuBtn{
@@ -126,6 +126,7 @@ i:hover{
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
+    transition: 0.5s;
 }
 .cart-item{
     position: relative;
@@ -159,6 +160,7 @@ i:hover{
     color: var(--main-color);
 }
 
+
 /* media queries */
 @media (max-width: 991px) {
     html{
@@ -168,23 +170,39 @@ i:hover{
         padding: 1.5rem 2rem;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+    
     #menuBtn{
         display: inline-block;
-    }
-    .nav{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background: #fff;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
-    }
-    .nav a{
-        color: var(--black);
-        display: block;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 2rem;
+}
+.nav{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+    transition: 0.5s ease-in-out;
+}
+ .active{
+    right: 0%;
+} 
+.nav a{
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.show{
+    transform: scaleY(1);
+    width: 90%;
+    right: 2rem;
+}
+
+}
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
     }
 }
