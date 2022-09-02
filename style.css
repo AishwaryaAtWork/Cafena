@@ -37,6 +37,11 @@ html::-webkit-scrollbar-thumb{
 body{
     background: var(--bg);
 }
+section{
+    padding: 2rem 7%;
+}
+
+/* header section */
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -160,6 +165,33 @@ header{
     color: var(--main-color);
 }
 
+/* home section */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(src/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    max-width: 60rem;
+}
+.content h3{
+    color: #fff;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+.content p{
+    
+    font-size: 2rem;
+    color: #eee;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+.content .btn2{
+    width: 30%;
+}
 
 /* media queries */
 @media (max-width: 991px) {
@@ -168,6 +200,9 @@ header{
     }
     header{
         padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
     }
 }
 @media (max-width: 768px) {
@@ -198,6 +233,17 @@ header{
     transform: scaleY(1);
     width: 90%;
     right: 2rem;
+}
+.home{
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+}
+.content h3{
+    font-size: 4.5rem;
+}
+.content p{
+    font-size: 1.5rem;
 }
 
 }
