@@ -18,7 +18,6 @@
 }
 html{
     font-size: 62.5%;
-    /* overflow: hidden; */
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
@@ -453,6 +452,44 @@ header{
 }
 
 /* footer */
+footer{
+    background: var(--black);
+    text-align: center;
+}
+footer .share{
+    padding: 1rem 0;
+}
+footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+footer .share a:hover{
+    background: var(--main-color);
+}
+footer .credits{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+footer .credits span{
+    color: var(--main-color);
+}
+
+/* added classes when click cart and search  */
+.show{
+    transform: scaleY(1);
+    right: 2rem;
+}
+.active{
+    right: 0;
+}
 
 /* media queries */
 @media (max-width: 991px) {
@@ -501,7 +538,7 @@ header{
     text-align: center;
 }
 .content h3{
-    font-size: 4.5rem;
+    font-size: 2.5rem;
 }
 .content p{
     font-size: 1.5rem;

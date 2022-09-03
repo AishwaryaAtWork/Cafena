@@ -1,4 +1,3 @@
-console.log('Hi');
 // to hide and unhide nav menubar
 var navbar=document.querySelector('.nav');
 document.querySelector('#menuBtn').onclick=()=>{
