@@ -243,37 +243,87 @@ header{
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
     gap: 1.5rem;
 }
-.box-container .box{
+.menu .box-container .box{
     padding: 5rem;
     text-align: center;
     border: var(--border);
 }
-.box img{
+.menu .box img{
     height: 10rem;
 }
-.box h3{
+.menu .box h3{
     padding: 1rem 0;
     font-size: 2rem;
     color: #fff;
 }
-.box .price{
+.menu .box .price{
     padding: .5rem 0;
     font-size: 2.5rem;
     color: #fff;
 }
-.box .price span{
+.menu .box .price span{
     padding: 1rem 0;
     font-size: 1.5rem;
     text-decoration: line-through;
 }
-.box:hover{
+.menu .box:hover{
     background: #fff;
 }
-.box:hover>*{
+.menu .box:hover>*{
     color: var(--black);
 }
 
 /* products section */
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.products .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+}
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: 0.3rem;
+}
+.products .box-container .box .icons a:hover{
+    background: var(--main-color);
+}
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+.products .box-container .box .image img{
+    height: 25rem;
+}
+.products .box-container .box .content h3{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.products .box-container .box .content .stars{
+    padding: 1.5rem;
+}
+.products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+.products .box-container .box .content .price{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+/* review section  */
 
 
 /* media queries */
