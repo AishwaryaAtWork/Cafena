@@ -41,6 +41,17 @@ body{
 section{
     padding: 2rem 7%;
 }
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
 
 /* header section */
 .btn{
@@ -196,44 +207,33 @@ header{
 }
 
 /* about section */
-.heading{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-}
-.heading span{
-    color: var(--main-color);
-    text-transform: uppercase;
-}
-.row{
+.about .row{
     display: flex;
     align-items: center;
     background: var(--black);
     flex-wrap: wrap;
 }
-.row .image{
+.about .row .image{
     flex: 1 1 45rem;
 }
-.row .image img{
+.about .row .image img{
     width: 100%;
 }
-.row .content{
+.about .row .content{
     flex: 1 1 45rem;
     padding: 2rem;
 }
-.row .content h3{
+.about .row .content h3{
     font-size: 3rem;
     color: #fff;
 }
-.row .content p{
+.about .row .content p{
     font-size: 1.6rem;
     color: #ccc;
     padding: 1rem 0;
     line-height: 1.8;
 }
-.row .btn{
+.about .row .btn{
     width: 40%;
 }
 
@@ -354,6 +354,53 @@ header{
 .review .box-container .box .stars i{
     font-size: 1.5rem;
     color: var(--main-color);
+}
+
+/* contact section  */
+.contact .row{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+.contact .row form .inputBox span{
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 2rem;
+}
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+.contact .row form .btn{
+    width: 40%;
 }
 
 /* media queries */
