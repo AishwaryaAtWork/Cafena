@@ -63,6 +63,7 @@ header{
     padding: 1.5rem 7%;
     border-bottom: var(--border);
     position: fixed;
+    background: var(--bg);
     top: 0;
     left: 0;
     right: 0;
@@ -191,7 +192,7 @@ header{
     padding: 1rem 0;
 }
 .home .content .btn{
-    width: 30%;
+    width: 40%;
 }
 
 /* about section */
@@ -233,10 +234,47 @@ header{
     line-height: 1.8;
 }
 .row .btn{
-    width: 30%;
+    width: 40%;
 }
 
 /* menu section */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+.box img{
+    height: 10rem;
+}
+.box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+.box .price{
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.box .price span{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.box:hover{
+    background: #fff;
+}
+.box:hover>*{
+    color: var(--black);
+}
+
+/* products section */
+
 
 /* media queries */
 @media (max-width: 991px) {
